@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +7,125 @@
     <title>Atributos Globais</title>
 </head>
 <body>
+    <style>
+        .caixa { width: 30px; height: 30px; background-color: chocolate; }
+        .drop { width: 50px; height: 50px; border: crimson 1px solid;}
+    </style>
     
-    ATRIBUTOS GLOBAIS, SÃO ATRIBUTOS QUE TODAS AS TAGS PODEM TER EM COMUM. 
-    - TODOS ELEMENTOS HTML PODEM TER ATRIBUTOS;
-    - OS ATRIBUTOS FORNECEM INFOMAÇÕES ADICIONAIS SOBRE UM ELEMENTO; 
-    - SÃO SEMPRE DEFINIDOS NA TAG DE ABERTURA DO ELEMENTO;
-    - PODEM SER EM PARES nome="valor" OU APENAS nome.
+    <div hidden>
+        ATRIBUTOS GLOBAIS, SÃO ATRIBUTOS QUE TODAS AS TAGS PODEM TER EM COMUM. 
+        - TODOS ELEMENTOS HTML PODEM TER ATRIBUTOS;
+        - OS ATRIBUTOS FORNECEM INFOMAÇÕES ADICIONAIS SOBRE UM ELEMENTO; 
+        - SÃO SEMPRE DEFINIDOS NA TAG DE ABERTURA DO ELEMENTO;
+        - PODEM SER EM PARES nome="valor" OU APENAS nome.     
+   
 
-    accesskey:      Define uma tecla de atalho para focar no elemento.
-    class:          Define quais classes CSS serão aplicadas no elemento.
-    contenteditable:Define se o conteúdo do elemento pode ou não ser editável.
-    data-*:         Usado para armazenar dados em um elemento. No lugar do (*) deve definir um nome.
-    dir:            Define a direção do conteúdo de um elemento.
-    draggable:      Define se o elemento pode ser arrastado ou não.
-    dropzone:       Define o que acontece quando o elemento arrastado é solto neste elemento.
-    hidden:         Define o elemento como oculto.
-    id:             Define uma identificação única para o elemento.
-    lang:           Define a linguagem do conteúdo do elemento.
-    spellcheck:     Define se o conteúdo do elemento deve ter sua ortografia verificada.
-    style:          Define estilos CSS diretamente no elemento.
-    tabindex:       Define a posição do elemento na ordem de tabulação da página.
-    title:          Define informações sobre o elemento.
-    translate:      Define se o conteúdo do elemento pode ser traduzido ou não.
+        accesskey:      Define uma tecla de atalho para focar no elemento.
+        class:          Define quais classes CSS serão aplicadas no elemento.
+        contenteditable:Define se o conteúdo do elemento pode ou não ser editável.
+        data-*:         Usado para armazenar dados em um elemento. No lugar do (*) deve definir um nome.
+        dir:            Define a direção do conteúdo de um elemento.
+        draggable:      Define se o elemento pode ser arrastado ou não.
+        dropzone:       Define o que acontece quando o elemento arrastado é solto neste elemento.
+        hidden:         Define o elemento como oculto.
+        id:             Define uma identificação única para o elemento.
+        lang:           Define a linguagem do conteúdo do elemento.
+        spellcheck:     Define se o conteúdo do elemento deve ter sua ortografia verificada.
+        style:          Define estilos CSS diretamente no elemento.
+        tabindex:       Define a posição do elemento na ordem de tabulação da página.
+        title:          Define informações sobre o elemento.
+        translate:      Define se o conteúdo do elemento pode ser traduzido ou não.
+    </div>
+
+
+    <h3>ACCESSKEY - ao apertar a tecla <mark> alt + n / alt + s </mark> o navegador ira deixar o botao com foco.</h3>
+
+    <button type="button" accesskey="n">Novo</button>
+    <button type="button" accesskey="s">Salvar</button>
+    <hr>
+
+
+    <h3>CLASS -  classes permitem a CSS e Javascript selecionar e acessar elementos específicos através dos seletores de classe ou funções como o método DOM</h3>
+    <hr>
+
+
+    <h3>CONTENTEDITABLE - permite editar o conteúdo de texto; recebe como valor <mark>"true"</mark>. </h3>
+    <p contenteditable="true"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis adipisci dolores doloribus natus eos totam veniam recusandae necessitatibus modi itaque corrupti ut quo!</p>
+    <hr>
+
+
+    <h3>DATA - guarda informacoes que não vão ser visiveis para o usuario; JS é usado para acessar esses dados ocultos.</h3>
+    <ul>
+        <li data-id="7" data-email="diego.sfc100@hotmail.com" data-age="31">Diego Rodrigues</li>
+    </ul>
+    <hr>
+
+
+    <h3>DIR - define a direcao de leitura da pagina; ltr: esq. p/ dir. rtl: direita p/ esquerda. auto: detecta o idioma e define a direção.</h3>
+    <p dir="ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti inventore fuga ipsum? Dicta cumque veniam perspiciatis reiciendis deserunt accusamus, beatae quam quod?</p>
+    <p dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti inventore fuga ipsum? Dicta cumque veniam perspiciatis reiciendis deserunt accusamus, beatae quam quod?</p>
+    <p dir="auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti inventore fuga ipsum? Dicta cumque veniam perspiciatis reiciendis deserunt accusamus, beatae quam quod?</p>
+    <hr>
+
+
+    <h3>*DRAGGABLE - elemento que pode ser arrastavel; recebe como valor <mark>"true""</mark>.</h3>
+    <button type="button" draggable="true">Arraste aqui</button>
+    <hr>
+
+
+    <h3>*DROPZONE - pega um campo e solta no local correto; tem como valores "copy", "move" e "link". </h3>
+    <div class="caixa" draggable="true"></div>
+    <div class="drop" dropzone="copy"></div>
+    <hr>
+
+
+    <h3>HIDDEN - oculta elementos.</h3>
+    <p>Diego</p>
+    <p hidden>Rodrigues</p>
+    <p>de Oliveira</p>
+    <hr>
+
+
+    <h3>ID - tem a mesma função das classes porém cada ID é único, ao contrário das classes.</h3>
+    <hr>
+
+
+    <h3>LANG - define a linguagem.</h3>
+    <p>Bom Dia</p>
+    <p lang="en">Good Morning</p>
+    <p lang="fr">Bonjour</p>
+    <hr>
+
+
+    <h3>SPELLCHECK - verifica ortografia quando o usuario digital alguma coisa. </h3>
+    <p spellcheck="true" contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat quia iure. Itaque nobis</p>
+    <hr>
+
+
+    <h3>STYLE - usado para editar CSS direto no atributo de uma tag.</h3>
+    <p style="background-color: aqua; color:white;">DIEGO RODRIGUES DE OLIVEIRA</p>
+    <hr>
+
+
+    <h3>TABINDEX - Ordem de tabulacao quando apressionado a tecla TAB.</h3>
+    <input type="text" placeholder="Digite seu E-mail" tabindex="1">
+    <input type="password" placeholder="Digite sua senha" tabindex="3">
+    <button type="reset" tabindex="4">Limpar</button>
+    <button type="submit" tabindex="2">Enviar</button>
+    <hr>
+
+
+    <h3>TITLE - descreve de forma detalhada o que a tag faz</h3>
+    <a href="youtube.com" title="link do youtube">YouTube</a>
+    <hr>
+
+
+    <h3>TRANSLATE - Pode traduir obrigatoriamente ou nao.</h3>
+    <p translate="yes">Welcome</p>
+    <p translate="no">Welcome</p>
+
+
+
 
 
 
