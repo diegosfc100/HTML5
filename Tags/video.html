@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag video</title>
+</head>
+<body>
+    
+    <!--
+        - tag usada para definir um vídeo, filme ou transmissão de vídeo;
+        - atualmente é suportado os formatos MP4, WEBM e OGG.
+        - qualquer texto no conteúdo da tag será exibido em navegadores que não suportam a tag.
+    -->
+    <!--
+        ATRIBUTOS: 
+            height: define a altura do player do vídeo;
+            poster: define uma imagem para ser exibida enquanto o vídeo estiver sendo carregado ou antes de reproduzir;
+            width: define a largura do player do vídeo.
+            autoplay: Comeca a reproduzir assim que os dados de video estiverem carregados;
+            controls: habilita os controles de reproducao do video;
+            loop: Define se o video deve reproduzir depois de começar;
+            muted: Define o video como mute;
+            preload: Define como o video deve ser carregado quando a pagina eh carregada. / auto; metadata; none.
+            src: Fonte do video;
+    -->
+
+    <video src="/video/soweto-piano-desejo.mp4" height="300" width="600"
+    autoplay controls preload loop playsinline></video>
+
+</body>
+</html>
