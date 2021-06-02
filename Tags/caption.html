@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 3px solid rgb(52, 14, 223);
+}
+</style>
+</head>
+<body>
+<!-- 
+A tag <caption> define uma legenda de tabela.
+
+A tag <caption> deve ser inserida imediatamente após a tag <table>.
+
+Dica: Por padrão, uma legenda de tabela será alinhada ao centro acima de uma tabela. 
+No entanto, as propriedades CSS text-align e caption-side podem ser usadas para alinhar
+e posicionar a legenda. 
+-->
+
+
+    <h1>The caption element</h1>
+
+    <table>
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <caption style="text-align:right">My savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <caption style="caption-side:bottom">My savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+
