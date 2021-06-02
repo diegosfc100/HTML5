@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- A tag <area> define uma área dentro de um mapa de imagem (um mapa de imagem é uma imagem com áreas clicáveis) -->
+
+<!-- Os elementos <area> são sempre aninhados dentro de uma tag <map>. -->
+
+<!-- Nota: O atributo usemap em <img> está associado ao atributo name do elemento <map> e cria um relacionamento
+     entre a imagem e o mapa.-->
+
+
+    <h1><mark>map</mark> and <mark>area</mark> elements</h1>
+
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+    <img src="/images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-pro-13-og-202011?wid=600&hei=315&fmt=jpeg&qlt=95&.v=1604347427000">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://a-static.mlcdn.com.br/1500x1500/iphone-11-apple-128gb-preto-61-12mp-ios/magazineluiza/155611100/1cd49b14dc8d5d36c597d5d964fc4c73.jpg">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="http://blog.chefsclub.com.br/wp-content/uploads/2019/08/historia_do_cafe-968x660.jpg">
+    </map>
+
+</body>
+</html>
