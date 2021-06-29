@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<!-- 
+- A tag <table> define uma tabela HTML.
+- Uma tabela HTML consiste em um elemento <table> e um ou mais elementos <tr>, <th> e <td>.
+- O elemento <tr> define uma linha da tabela, o elemento <th> define um cabeçalho da tabela e o elemento <td> define uma célula da tabela.
+- Uma tabela HTML também pode incluir os elementos <caption>, <colgroup>, <thead>, <tfoot> e <tbody>. 
+
+- A tag <thead> é usada para agrupar o conteúdo do cabeçalho em uma tabela HTML.
+- O elemento <thead> é usado em conjunto com os elementos <tbody> e <tfoot> para especificar cada parte de uma tabela (cabeçalho, corpo, rodapé).
+- Os navegadores podem usar esses elementos para permitir a rolagem do corpo da tabela independentemente do cabeçalho e rodapé. Além disso, ao imprimir uma tabela grande que abrange várias páginas, esses elementos podem permitir que o cabeçalho e o rodapé da tabela sejam impressos na parte superior e inferior de cada página.
+- Nota: O elemento <thead> deve ter uma ou mais tags <tr> dentro.
+- A tag <thead> deve ser usada no seguinte contexto: como filho de um elemento <table>, após quaisquer elementos <caption> e <colgroup> e antes de quaisquer elementos <tbody>, <tfoot> e <tr> .
+
+-->
+
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
