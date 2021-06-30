@@ -1,16 +1,16 @@
-# HTML5 Completo:
+# HTML5 Completo
 ## Índice
 - [Índice](#índice)
-- [HTML Básico](###html-básico)
-- [Formatação](###formatação)
-- [Formulários e Entradas](###formulários-e-entradas)
-- [Imagens](###imagens)
-- [Áudio Vídeo](###áudio-vídeo)
-- [Ligações](###ligações)
-- [Tabelas](###tabelas)
-- [Estilos Semântica](###estilos-e-semântica)
-- [Meta Info](###meta-info)
-- [Programação](###programação)
+- [HTML Básico](#html-básico)
+- [Formatação](#formatação)
+- [Formulários e Entradas](#formulários-e-entradas)
+- [Imagens](#imagens)
+- [Áudio Vídeo](#áudio-vídeo)
+- [Ligações](#ligações)
+- [Tabelas](#tabelas)
+- [Estilos Semântica](#estilos-e-semântica)
+- [Meta Info](#meta-info)
+- [Programação](#programação)
 ## Resumos das Tags HTML5:
 
 ### HTML Básico
@@ -161,7 +161,7 @@
 
 <track> - Define faixas de texto para elementos de mídia (<video> e <audio>);
 
-**<video> -** Define um vídeo ou filme;
+<video> - Define um vídeo ou filme;
 ```
 ### Ligações
 
