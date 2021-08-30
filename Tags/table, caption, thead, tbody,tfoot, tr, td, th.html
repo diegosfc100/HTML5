@@ -20,6 +20,14 @@ table, th, td {
 - Nota: O elemento <thead> deve ter uma ou mais tags <tr> dentro.
 - A tag <thead> deve ser usada no seguinte contexto: como filho de um elemento <table>, após quaisquer elementos <caption> e <colgroup> e antes de quaisquer elementos <tbody>, <tfoot> e <tr> .
 
+A tag <caption> define uma legenda de tabela.
+A tag <caption> deve ser inserida imediatamente após a tag <table>.
+
+Dica: Por padrão, uma legenda de tabela será alinhada ao centro acima de uma tabela. 
+No entanto, as propriedades CSS text-align e caption-side podem ser usadas para alinhar
+e posicionar a legenda. 
+
+O <colgroup> define um grupo de colunas em uma tabela.
 -->
 
     
@@ -48,5 +56,72 @@ table, th, td {
         </tfoot>
     </table>
 
+
+    <table>
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+    <br>
+
+
+    <table>
+        <caption style="text-align:right">My savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+    <br>
+
+
+    <table>
+        <caption style="caption-side:bottom">My savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <colgroup>
+          <col span="2" style="background-color:red">
+          <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+          <th>Ano</th>
+          <th>Marca/Modelo</th>
+          <th>Preço</th>
+        </tr>
+        <tr>
+          <td>2011</td>
+          <td>Renault/Sandero</td>
+          <td>$28.000</td>
+        </tr>
+        <tr>
+          <td>2021</td>
+          <td>Fiat/Argo</td>
+          <td>$55.000</td>
+        </tr>
+      </table>
 </body>
 </html>
