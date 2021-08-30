@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- A tag <abbr> define uma abreviatura ou acrônimo, como "HTML", "CSS", "Sr.", "Dr.", "ASAP", "ATM". -->
+
+<!-- Dica: Use o atributo de título global para mostrar a descrição da abreviatura / acrônimo
+     ao passar o mouse sobre o elemento. -->
+
+<!-- <abbr> também pode ser usado com <dfn> para definir uma abreviação -->
+
+    <h1><mark>abbr</mark> element</h1>
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+    <h1><mark>abbr</mark> element + <mark>dfn</mark> element</h1>
+
+    <p><dfn><abbr title="Cascading Style Sheets">CSS</abbr>
+    </dfn> is a language that describes the style of an HTML document.</p>
+
+
+    <!-- 
+    A tag <dfn> representa o "elemento de definição" e especifica um termo que será definido no conteúdo.
+
+    O pai mais próximo da tag <dfn> também deve conter a definição / explicação do termo.
+
+    O termo dentro da tag <dfn> pode ser qualquer um dos seguintes:
+-->
+
+    <!-- 1. Assim como o conteúdo do elemento <dfn>: -->
+        <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+        <!-- 2. Ou, com o atributo title adicionado: -->
+        <p><dfn title="HyperText Markup Language">HTML</dfn> is the standard markup language for creating web pages.</p>
+    
+        <!-- 3. Ou, com uma tag <abbr> dentro do elemento <dfn>: -->
+        <p><dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> is the standard markup language for creating web pages.</p>
+    
+        <!-- 4. Ou, com o atributo id adicionado. Então, sempre que um termo é usado, ele pode se referir à definição com uma tag <a>: -->
+        <p><dfn id="html-def">HTML</dfn> is the standard markup language for creating web pages.</p>
+    
+        <p>This is some text...</p>
+    
+        <p>This is some text...</p>
+    
+        <p>This is some text...</p>
+    
+        <p>Learn <a href="#html-def">HTML</a> now.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
